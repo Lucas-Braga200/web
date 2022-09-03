@@ -65,3 +65,4 @@ class ImcTest extends TestCase
         $imc->setPeso(152.1);
         $this->assertEquals("Obesidade III", $imc->getClassificacao());
     }
+}
