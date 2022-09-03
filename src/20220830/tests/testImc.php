@@ -11,13 +11,13 @@ class ImcTest extends TestCase{
         $altura = 1.75;
         $imc = new Imc($altura,$peso);
 
-        $this->assertEquals(peso/(altura*altura),$imc->getImc());
+        $this->assertEquals($peso/($altura*$altura),$imc->getImc());
 
         $peso = 90;
         $altura = 1.85;
         $imc->setAltura($altura);
         $imc->setPeso($peso);
 
-        $this->assertEquals(peso/(altura*altura),$imc->getImc());
+        $this->assertEquals($peso/($altura*$altura),$imc->getImc());
     }
 }
