@@ -1,1 +1,1 @@
-{"version":1,"defects":{"Tests\\ImcTest::testGetImc":4,"Tests\\ImcTest::testGetPesoAltura":4,"Tests\\ImcTest::testGetClassificacao":3},"times":{"Tests\\ImcTest::testGetImc":0.156,"Tests\\ImcTest::testGetPesoAltura":0,"Tests\\ImcTest::testGetClassificacao":0.013}}
+{"version":1,"defects":{"Tests\\ImcTest::testGetImc":4,"Tests\\ImcTest::testGetPesoAltura":4,"Tests\\ImcTest::testGetClassificacao":3},"times":{"Tests\\ImcTest::testGetImc":0.166,"Tests\\ImcTest::testGetPesoAltura":0,"Tests\\ImcTest::testGetClassificacao":0.014}}
