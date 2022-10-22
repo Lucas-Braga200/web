@@ -1,0 +1,9 @@
+{
+    "name": "webi/20221018",
+    "autoload": {
+        "psr-4": {
+            "Webi\\20221018\\": "src/"
+        }
+    },
+    "require": {}
+}
