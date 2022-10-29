@@ -42,7 +42,7 @@ class Pergunta {
             return false;
         }
 
-        $query = "INSERT INTO perguntas (pergunta,status,created,modified) VALUES ('" . $this->corpo . "','" . $this->status . "','" . date(DATE_ATOM) . "','" . date(DATE_ATOM) . "')";
+        $query = "INSERT INTO perguntas (pergunta,status,usuario_id,created,modified) VALUES ('" . $this->pergunta . "','" . $this->status . "','" . 1 . "','" . date(DATE_ATOM) . "','" . date(DATE_ATOM) . "')";
 
         $result = pg_query($query);
 
