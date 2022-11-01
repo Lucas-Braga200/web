@@ -7,6 +7,7 @@ class Pergunta {
     private $id;
     private $pergunta;
     private $status;
+    private $usuario;
 
     private $conexao;
 
@@ -28,11 +29,17 @@ class Pergunta {
     public function getStatus() {
         return $this->status;
     }
+    public function getUsuario() {
+        return $this->usuario;
+    }
     public function setPergunta($pergunta) {
         $this->pergunta = $pergunta;
     }
     public function setStatus($status) {
         $this->status = $status;
+    }
+    public function setUsuario($usuario) {
+        $this->usuario = $usuario;
     }
 
 

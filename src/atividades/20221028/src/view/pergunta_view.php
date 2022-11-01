@@ -1,5 +1,6 @@
 <?php
 $perguntas = $_REQUEST['perguntas'];
+$usuarios = $_REQUEST['usuarios'];
 
 $icons = array("create" => "Editor", "remove_red_eye" => "Somente Leitura", "clear" => "Bloqueado", "supervisor_account" => "Professor", "person" => "Aluno", "verified_user" => "Administrador");
 ?>
@@ -33,6 +34,18 @@ $icons = array("create" => "Editor", "remove_red_eye" => "Somente Leitura", "cle
                     <div class="input-field col m4 s12">
                         <input name="pergunta" id="pergunta" type="text" class="validate">
                         <label for="pergunta">Pergunta</label>
+                    </div>
+                    <div class="input-field col m4 s12">
+                        <select id="usuario" name="usuario">
+                            <?php
+                                foreach ($usuarios as $usuario) {
+                                ?>
+                                    <option value="<?= $usuario["id"] ?>"><?= $usuario["nome"] ?></option>
+                                <?php
+                                }
+                            ?>
+                        </select>
+                        <label>Usuário</label>
                     </div>
                     <div class="input-field col m4 s12">
                         <select id="statusPergunta" name="statusPergunta">
