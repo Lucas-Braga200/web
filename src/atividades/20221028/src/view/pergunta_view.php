@@ -30,7 +30,7 @@ $icons = array("create" => "Editor", "remove_red_eye" => "Somente Leitura", "cle
             <h5 id="perguntaModalPergunta"></h5>
             <br><br>
             <div class="row">
-                <form id="formPergunta" method="post" action="controller/InserirController.php">
+                <form id="formPergunta" method="post" action="controller/InserirPerguntasController.php">
                     <div class="input-field col m4 s12">
                         <input name="pergunta" id="pergunta" type="text" class="validate">
                         <label for="pergunta">Pergunta</label>
