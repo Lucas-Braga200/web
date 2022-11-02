@@ -5,5 +5,7 @@
   RewriteRule ^read/([0-9]+)/?$ 20220927/read.php?id=$1 [NC]
   RewriteRule ^vota/([A-Za-z]+)/([0-9]+)/?$ 20221004/vota.php?nome=$1&idade=$2 [NC]
   RewriteRule ^imc/([0-9.]+)/([0-9.]+)?$ 20221007/atividade-01.php?altura=$1&peso=$2 [NC]
+
   RewriteRule ^pergunta/?$ atividades/20221028/src/pergunta.php
+  RewriteRule ^pergunta/create/?$ atividades/20221028/src/controller/inserirPerguntasController.php
 </IfModule>

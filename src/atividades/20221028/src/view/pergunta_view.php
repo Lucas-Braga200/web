@@ -30,7 +30,7 @@ $icons = array("create" => "Editor", "remove_red_eye" => "Somente Leitura", "cle
             <h5 id="perguntaModalPergunta"></h5>
             <br><br>
             <div class="row">
-                <form id="formPergunta" method="post" action="controller/InserirPerguntasController.php">
+                <form id="formPergunta" method="post" action="/pergunta/create/">
                     <div class="input-field col m4 s12">
                         <input name="pergunta" id="pergunta" type="text" class="validate">
                         <label for="pergunta">Pergunta</label>
@@ -77,6 +77,7 @@ $icons = array("create" => "Editor", "remove_red_eye" => "Somente Leitura", "cle
             <tr>
                 <th>ID</th>
                 <th>Pergunta</th>
+                <th>Usuário</th>
                 <th>Status</th>
             </tr>
             <?php
@@ -85,6 +86,7 @@ $icons = array("create" => "Editor", "remove_red_eye" => "Somente Leitura", "cle
                 <tr>
                     <td><?= $pergunta["id"] ?></td>
                     <td><?= $pergunta["pergunta"] ?></td>
+                    <td><?= $pergunta["usuario_id"] ?></td>
                     <td><?= $pergunta["status"] ?></td>
                 </tr>
             <?php

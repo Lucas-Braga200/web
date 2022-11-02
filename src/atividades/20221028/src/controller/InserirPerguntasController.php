@@ -8,7 +8,9 @@ require_once "../model/Pergunta.php";
 $pergunta = new Pergunta();
 
 $pergunta->setPergunta($_POST["pergunta"]);
-$pergunta->setStatus($_POST["status"]);
-$pergunta->setUsuario($_POST["usuario"])
+$pergunta->setStatus($_POST["statusPergunta"]);
+$pergunta->setUsuario($_POST["usuario"]);
 
 $pergunta->criar();
+
+header("Location: /pergunta/");
