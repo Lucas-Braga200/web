@@ -42,6 +42,10 @@ class Pergunta {
         $this->usuario = $usuario;
     }
 
+    public function getConexao() {
+        return $this->conexao;
+    }
+
 
     // Crud
     public function criar() {
