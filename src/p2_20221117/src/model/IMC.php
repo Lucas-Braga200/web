@@ -59,4 +59,26 @@ class IMC {
             return "Obesidade III";
         }
     }
+
+    public function getGrau() {
+        $imc = $this->getIMC();
+
+        if ($imc == null) {
+            return null;
+        }
+
+        if ($imc < 18.5) {
+            return 0;
+        } else if ($imc < 25) {
+            return 0;
+        } else if ($imc < 30) {
+            return 0;
+        } else if ($imc < 35) {
+            return 1;
+        } else if ($imc < 40) {
+            return 2;
+        } else {
+            return 3;
+        }
+    }
 }
